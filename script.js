@@ -1,22 +1,22 @@
 const dimensionMeta = {
   opportunity: {
-    title: "第一维度：对商机的敏感度",
-    subtitle: "内心简称：闻钱味速度",
+    title: "第一维度：保密",
+    subtitle: "",
     label: "商机敏感度",
   },
   risk: {
-    title: "第二维度：风险承受能力",
-    subtitle: "内心简称：精神抗揍值",
+    title: "第二维度：保密",
+    subtitle: "",
     label: "风险承受能力",
   },
   execution: {
-    title: "第三维度：执行力与耐心",
-    subtitle: "内心简称：把事做烦了还不跑的能力",
+    title: "第三维度：保密",
+    subtitle: "",
     label: "执行力与耐心",
   },
   iteration: {
-    title: "第四维度：学习与迭代能力",
-    subtitle: "内心简称：被市场扇耳光后还有没有脑子",
+    title: "第四维度：保密",
+    subtitle: "",
     label: "学习与迭代能力",
   },
 };
