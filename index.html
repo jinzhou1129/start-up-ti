@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>创业人格测试</title>
+    <meta
+      name="description"
+      content="测一测你更适合哪种创业方式，以及你最容易在哪一步开始精神内耗。"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <main class="app-shell">
+      <section id="home-screen" class="screen active">
+        <div class="hero-card card">
+          <p class="eyebrow">ENTREPRENEUR MODE / NOT CLINICALLY ACCURATE</p>
+          <h1>创业人格测试</h1>
+          <p class="subtitle">
+            不是你不适合创业，很多时候只是你拿自己的短板，去硬刚市场。
+          </p>
+
+          <div class="intro-grid">
+            <div class="intro-item">
+              <span class="intro-label">题量</span>
+              <strong>12道</strong>
+            </div>
+            <div class="intro-item">
+              <span class="intro-label">时长</span>
+              <strong>2分钟</strong>
+            </div>
+            <div class="intro-item">
+              <span class="intro-label">风格</span>
+              <strong>轻度冒犯</strong>
+            </div>
+            <div class="intro-item">
+              <span class="intro-label">作用</span>
+              <strong>认清死法</strong>
+            </div>
+          </div>
+
+          <div class="intro-copy">
+            <p>它不负责证明你会不会发财。</p>
+            <p>它只负责告诉你：你更适合怎么折腾，以及你通常会在哪一步开始装没看见。</p>
+          </div>
+
+          <button id="start-btn" class="primary-btn">开始被冒犯</button>
+        </div>
+      </section>
+
+      <section id="quiz-screen" class="screen">
+        <div class="quiz-topbar">
+          <div>
+            <p class="eyebrow">QUESTION <span id="question-number">1</span> / 12</p>
+            <h2 id="dimension-title">第一维度</h2>
+            <p id="dimension-subtitle" class="dimension-subtitle"></p>
+          </div>
+          <button id="restart-btn-top" class="ghost-btn small">重开人生</button>
+        </div>
+
+        <div class="progress-track" aria-hidden="true">
+          <div id="progress-bar" class="progress-bar"></div>
+        </div>
+
+        <article class="card question-card">
+          <h3 id="question-text" class="question-text"></h3>
+          <div id="options-container" class="options-container"></div>
+        </article>
+      </section>
+
+      <section id="result-screen" class="screen">
+        <div class="result-layout">
+          <article class="card result-main">
+            <p class="eyebrow">YOUR ENTREPRENEURIAL DAMAGE PROFILE</p>
+            <h2 id="result-title"></h2>
+            <p id="result-tagline" class="result-tagline"></p>
+            <p id="result-summary" class="result-summary"></p>
+
+            <div class="share-box">
+              <span class="share-label">结果页文案</span>
+              <p id="share-text"></p>
+            </div>
+          </article>
+
+          <article class="card result-side">
+            <h3>四维雷达（简易人话版）</h3>
+            <div id="score-bars" class="score-bars"></div>
+          </article>
+        </div>
+
+        <div class="result-grid">
+          <article class="card result-block">
+            <h3>你比较擅长</h3>
+            <ul id="strengths-list"></ul>
+          </article>
+
+          <article class="card result-block">
+            <h3>你容易死在</h3>
+            <ul id="blindspots-list"></ul>
+          </article>
+
+          <article class="card result-block industries-block">
+            <h3>更适合的行业/打法</h3>
+            <div id="industries-list" class="tag-list"></div>
+          </article>
+        </div>
+
+        <div class="axis-grid">
+          <article class="card axis-card">
+            <span class="axis-label">开拓轴</span>
+            <strong id="explore-axis-text"></strong>
+            <p>由「商机敏感度」+「风险承受能力」加权生成。</p>
+          </article>
+          <article class="card axis-card">
+            <span class="axis-label">成事轴</span>
+            <strong id="build-axis-text"></strong>
+            <p>由「执行力与耐心」+「学习与迭代能力」加权生成。</p>
+          </article>
+        </div>
+
+        <div class="result-actions">
+          <button id="retry-btn" class="primary-btn">再测一次</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
